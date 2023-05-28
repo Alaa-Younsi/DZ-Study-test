@@ -1,0 +1,99 @@
+
+html, body {  
+    box-sizing: border-box;  
+    background-color: black;
+    margin: 0;
+}
+
+#Header {
+    width: 45%;
+    height: 50px;
+    background-color: #282828;
+    position: sticky;
+    left: 30%;
+    display: flex;
+    overflow: hidden;
+    border-bottom: 2px solid red;
+}
+
+@media screen and (max-width: 600px) {
+    #Header {
+        width: 70%;
+        height: 45px;
+        position: sticky;
+        left: 30%;
+    }
+}
+
+.bar {
+    display: inline;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border: 2px solid red;
+    padding-top: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .bar {
+        padding-top: 12px;
+        font-size: 14px;
+    }
+}
+
+.bar:hover {
+    background-color: white;
+}
+
+#Home, #Articles, #Login, #Signup {
+    text-decoration: none;
+    color: red;
+}
+
+#Options {
+    width: 17%;
+    height: 99vh;
+    position: absolute;
+    left: 0;
+    top: 0;   
+    border: 2px solid red;
+    overflow: hidden;
+    background-color: #282828;
+}
+
+@media screen and (max-width: 600px) {
+    #Options {
+        width: 30%; 
+    }
+}
+
+.options {
+    display: block;
+    width: 100%;
+    text-align: center;
+    height: 50px;
+    border-bottom: 2px solid red;
+}
+
+.opt:hover {
+    background-color: white;
+}
+
+.opt {
+    padding-top: 5%;
+}
+
+.opt1 {
+    border: none;
+}
+
+.option-text {
+    color: red;
+}
+
+.opt-list {
+    text-decoration: none;
+    color: red;
+}
+
+
