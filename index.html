@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>منصة اللغة العربية</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <!-- HEADER -->
+        <header id="header">
+        <div class="logo">LOGO</div>
+        <div class="nav-buttons">
+            <button>تسجيل الدخول</button>
+            <button>الدخول كضيف</button>
+        </div>
+        </header>
+
+        <!-- HERO -->
+        <div class="hero">
+        <div class="hero-content">
+            <h1>!مرحبا</h1>
+        <!-- <p>مرحبا في منصتنا</p>-->
+
+            <div class="buttons">
+            <button onclick="openPanel(1)">حساب قديم</button>
+            <button onclick="openPanel(2)">انشا حساب</button>
+            <button onclick="openPanel(3)">من نحن</button>
+            <button onclick="openPanel(4)">الدخول كضيف</button>
+            </div>
+        </div>
+        </div>
+
+        <!-- SLIDE PANELS -->
+        <div id="panel1" class="slide-panel">
+        <h2>حساب قديم</h2>
+            <div class="slide-buttons">
+                <button>تسجيل الدخول</button>
+                <button>انشاء حساب</button>
+            </div>
+        </div>
+
+        <div id="panel2" class="slide-panel">
+        <h2>انشا حساب</h2>
+            <div class="slide-buttons">
+                <button>انشاء حساب</button>
+                <button>تسجيل الدخول</button>
+            </div>
+        </div>
+
+        <div id="panel3" class="slide-panel">
+        <h2>من نحن</h2>
+        <ul>
+            <li>تعريف بالموقع</li>
+            <li>تعريف بالفريق</li>
+        </ul>
+        </div>
+
+        <div id="panel4" class="slide-panel">
+        <h2>الدخول كضيف</h2>
+        <div class="slide-buttons">
+                <button id="subTriggerBtn" onclick="toggleSubPanel()">المصطلحات</button>
+                <button>المحاضرات</button>
+                <button>الملتقيات و الندوات</button>
+                <button>بودكاست</button>
+                <button>المقالات و المجلدات</button>
+                <button>برامج تكوينية</button>
+                <button>المكتبة</button>
+                <button>مذكرات التخرج ورسائل الدكتوراه</button>
+                <button>مستجدات و اصدارات</button>
+            </div>
+        </div>
+
+        <div id="subPanel">
+        <button class="subslide-buttons">قديمة</button><br><br>
+        <button class="subslide-buttons">حديثة</button><br><br>
+        <button class="subslide-buttons">معاصرة</button>
+    </div>
+
+        <!-- INFO SECTIONS -->
+        <section id="university">
+        <h2>من نحن</h2>
+        <p>
+            تلتزم جامعتنا بتقديم تعليم عالي الجودة يمكّن الطلاب من اكتساب المعرفة والمهارات والخبرة العملية.
+        </p>
+        </section>
+
+        <section id="major">
+        <h2>تعريف بالموقع و الفريق</h2>
+        <p>
+            تلتزم جامعتنا بتقديم تعليم عالي الجودة يمكّن الطلاب من اكتساب المعرفة والمهارات والخبرة العملية.
+        </p>
+        </section>
+
+        <!-- FOOTER -->
+        <footer>
+        <div class="footer-details">
+            University • All Rights Reserved<br>
+            Address: 123 University Street, City, Country
+        </div>
+        </footer>
+        <script src="main.js"></script>
+    </body>
+</html>
