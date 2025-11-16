@@ -156,6 +156,21 @@ footer .footer-details{
     backdrop-filter: blur(6px);
 }
 
+@media(max-width:600px){
+  #subPanel {
+    display:none;
+    position:fixed;
+    z-index: 99;
+    top:120px;right:125px;
+    width:100px;height:160px;
+    margin-top:15px;
+    padding:15px;
+    background:rgba(255,255,255,0.1);
+    border-radius:8px;
+    backdrop-filter: blur(6px);
+}
+}
+
 
 .subslide-buttons {
     padding: 4px 8px;
@@ -204,7 +219,8 @@ header .nav-buttons button:hover{background:white;}
 }
 
 .description {
-  font-size: 20px;
+  margin-top: 10px;
+  font-size: 15px;
   font-weight: bold;
   color: black;
   background:rgba(255,255,255,0.7);
@@ -226,11 +242,12 @@ header .nav-buttons button:hover{background:white;}
 
 @media(max-width:600px){
 .description {
-  font-size: 14px;
+  margin-top: 8px;
+  font-size: 11px;
   font-weight: bold;
   color: black;
   background:rgba(255,255,255,0.7);
-  padding: 12px;
+  padding: 8px;
   border-radius: 5%;
   text-align: right;
 }
