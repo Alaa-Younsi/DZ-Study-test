@@ -87,7 +87,7 @@ text-shadow:
 .slide-panel h2{margin-bottom:15px;color: white;font-size: 40px; text-align: center;}
 .slide-panel ul{list-style:none;}
 .slide-panel ul li{
-  margin-bottom:12px;color:#ff6600;font-weight:bold;
+  margin-bottom:12px;color:white;font-weight:bold;
   cursor:pointer;
 }
 
@@ -216,5 +216,10 @@ header .nav-buttons button:hover{background:white;}
 .description-title {
   font-size: 25px !important;
   font-weight: bold !important;
-  color: red !important;
+  color: white !important;
+  text-shadow: 
+        -1px -1px 0 #000,  /* Top-left shadow */
+         2px -1px 0 #000,  /* Top-right shadow */
+        -2px  1px 0 #000,  /* Bottom-left shadow */
+         2px  1px 0 #000;  /* Bottom-right shadow */
 }
