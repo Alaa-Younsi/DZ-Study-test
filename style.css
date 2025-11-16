@@ -50,17 +50,17 @@ header .nav-buttons button:hover{background:white;}
 }
 .hero h1{font-size:7.5rem;margin-bottom:5 0px;color:#cc9d70;
   text-shadow: 
-        -3px -1px 0 #000,  /* Top-left shadow */
-         1px -3px 0 #000,  /* Top-right shadow */
-        -3px  1px 0 #000,  /* Bottom-left shadow */
-         1px  3px 0 #000;  /* Bottom-right shadow */
+        -2px -1px 0 #000,  /* Top-left shadow */
+         2px -2px 0 #000,  /* Top-right shadow */
+        -2px  1px 0 #000,  /* Bottom-left shadow */
+         2px  1px 0 #000;  /* Bottom-right shadow */
 }
 .hero p{font-size:2.5rem;margin-bottom:25px;color: white;
 text-shadow: 
-        -3px -1px 0 #000,  /* Top-left shadow */
-         1px -3px 0 #000,  /* Top-right shadow */
-        -3px  1px 0 #000,  /* Bottom-left shadow */
-         1px  3px 0 #000;  /* Bottom-right shadow */}
+        -2px -1px 0 #000,  /* Top-left shadow */
+         2px -2px 0 #000,  /* Top-right shadow */
+        -2px  1px 0 #000,  /* Bottom-left shadow */
+         2px  1px 0 #000;  /* Bottom-right shadow */}
 
 .hero .buttons{
   display:flex;flex-wrap:wrap;gap:15px;justify-content:center;
@@ -219,7 +219,19 @@ header .nav-buttons button:hover{background:white;}
   color: white !important;
   text-shadow: 
         -1px -1px 0 #000,  /* Top-left shadow */
-         2px -1px 0 #000,  /* Top-right shadow */
-        -2px  1px 0 #000,  /* Bottom-left shadow */
-         2px  1px 0 #000;  /* Bottom-right shadow */
+         1px -1px 0 #000,  /* Top-right shadow */
+        -1px  1px 0 #000,  /* Bottom-left shadow */
+         1px  1px 0 #000;  /* Bottom-right shadow */
+}
+
+@media(max-width:600px){
+.description {
+  font-size: 14px;
+  font-weight: bold;
+  color: black;
+  background:rgba(255,255,255,0.7);
+  padding: 12px;
+  border-radius: 5%;
+  text-align: right;
+}
 }
