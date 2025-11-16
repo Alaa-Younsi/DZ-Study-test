@@ -125,9 +125,9 @@ footer .footer-details{
 
 /* MOBILE */
 @media(max-width:600px){
-  .hero p{font-size:2rem;}
+  .hero p{font-size:1.5rem;}
   .hero h1{font-size:5rem;}
-  .hero .buttons button{width:70%;}
+  .hero .buttons button{width:65%;}
   header{padding:20px 15px;}
 }
 
@@ -174,4 +174,18 @@ footer .footer-details{
   font-size: 12px;
 }
 header .nav-buttons button:hover{background:white;}
+}
+
+
+@media(max-width:600px){
+.slide-buttons button {
+    padding: 8px 14px;
+    border: 2px solid black;
+    background: #cc9d70;
+    color: black;
+    font-size: 19px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 6px;
+}
 }
