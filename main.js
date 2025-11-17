@@ -43,3 +43,40 @@ document.addEventListener("click", function (event) {
         sub.style.display = "none";
     }
 });
+
+
+function openContent(id) {
+    // Hide all content panels
+    document.querySelectorAll('.content-panel').forEach(panel => {
+        panel.style.display = 'none';
+    });
+
+    // Show the selected one
+    document.getElementById(id).style.display = 'block';
+}
+
+
+// Close content panels when clicking outside (no wrapper required)
+document.addEventListener("click", function(e) {
+  // get all content panels
+  const panels = Array.from(document.querySelectorAll('.content-panel'));
+  if (panels.length === 0) return;
+
+  // check if any panel is visible (use computed style for robustness)
+  const anyOpen = panels.some(p => window.getComputedStyle(p).display !== 'none');
+  if (!anyOpen) return; // nothing open, nothing to do
+
+  // If click was inside any content panel -> don't close
+  if (e.target.closest('.content-panel')) return;
+
+  // If click was on a button that opens content -> don't close
+  // This matches elements with inline onclick="openContent('id')" or similar.
+  if (e.target.closest('[onclick^="openContent("]')) return;
+
+  // Otherwise hide all content panels
+  panels.forEach(p => {
+    p.style.display = 'none';
+    // if you use CSS classes instead, you can remove the active class instead:
+    // p.classList.remove('active');
+  });
+});
