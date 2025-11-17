@@ -147,7 +147,7 @@ footer .footer-details{
     display:none;
     position:fixed;
     z-index: 99;
-    top:120px;right:125px;
+    top:75px;right:125px;
     width:100px;height:150px;
     margin-top:15px;
     padding:15px;
@@ -242,13 +242,93 @@ header .nav-buttons button:hover{background:white;}
 
 @media(max-width:600px){
 .description {
-  margin-top: 8px;
-  font-size: 11px;
-  font-weight: bold;
+    margin-top: 8px;
+    font-size: 11px;
+    font-weight: bold;
+    color: black;
+    background:rgba(255,255,255,0.7);
+    padding: 8px;
+    border-radius: 5%;
+    text-align: right;
+  }
+}
+
+.description-words {
+  margin-top: -8px !important;
+}
+
+.content-panel {
+  display:none;
+  position:fixed;
+  z-index: 99;
+  top:75px;right:55px;
+  width:240px;height:400px;
+  margin-top:15px;
+  text-align: center;
+  padding: 10px;
+  background:rgba(255,255,255,0.1);
+  border-radius:8px;
+  backdrop-filter: blur(6px);
+}
+
+.lecture {
+  font-size: 20px;
   color: black;
-  background:rgba(255,255,255,0.7);
-  padding: 8px;
-  border-radius: 5%;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.lecture:hover {
+  color: white;
+}
+
+.content-panel1{
+  display:none;
+  position:fixed;
+  z-index: 99;
+  top:75px;right:5px;
+  width:330px;height:600px;
+  margin-top:15px;
+  text-align: center;
+  padding: 10px;
+  background:rgba(255,255,255,0.1);
+  border-radius:8px;
+  backdrop-filter: blur(6px);
+}
+
+.dawarat {
+  padding: 0px !important;
   text-align: right;
 }
+
+.dawarat-title {
+  font-size: 19px;
+  margin-top: -15px;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  text-shadow: 
+        -1px -1px 0 white,  /* Top-left shadow */
+         1px -1px 0 white,  /* Top-right shadow */
+        -1px  1px 0 white,  /* Bottom-left shadow */
+         1px  1px 0 white;  /* Bottom-right shadow */
+}
+
+.dawarat-text {
+  font-size: 16x;
+  color: white;
+  font-weight: bold;
+  margin-top: -15px;
+}
+
+.web-description {
+  text-align: right;
+}
+
+.logo img {
+    height: 80px;
+    width: auto;
+    object-fit: contain;
+    margin-top: -5px;
+    margin-bottom: -5px;
 }
