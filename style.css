@@ -22,7 +22,7 @@ header .logo{
 header .nav-buttons button{
   margin-left:15px;
   padding:11px 15px;
-  background:#cc9d70;color:black;
+  background:#0045FF;color:white;
   font-weight: bold;
   border-radius:5px;cursor:pointer;transition:0.3s;
   border: 2px solid black;
@@ -33,7 +33,7 @@ header .nav-buttons button:hover{background:white;}
 /* HERO */
 .hero{
   height:100vh;
-  background:url('arabe9.png') center/cover no-repeat;
+  background:url('arabe2.png') center/cover no-repeat;
   display:flex;justify-content:center;align-items:center;
   flex-direction:column;text-align:center;color:white;
   position:relative;
@@ -48,7 +48,7 @@ header .nav-buttons button:hover{background:white;}
 .hero-content{
   position:relative;z-index:2;
 }
-.hero h1{font-size:7.5rem;margin-bottom:5 0px;color:#cc9d70;
+.hero h1{font-size:7.5rem;margin-bottom:5 0px;color:#0045FF;
   text-shadow: 
         -2px -1px 0 #000,  /* Top-left shadow */
          2px -2px 0 #000,  /* Top-right shadow */
@@ -67,7 +67,7 @@ text-shadow:
 }
 .hero .buttons button{
   padding:14px 28px;font-size:1rem;border: 2px solid black;
-  background:#cc9d70;color:black;border-radius:6px;font-weight: bold;font-size: 20px;
+  background:#0045FF;color:white;border-radius:6px;font-weight: bold;font-size: 20px;
   cursor:pointer;transition:0.3s;
 }
 .hero .buttons button:hover{background:white;}
@@ -102,7 +102,7 @@ text-shadow:
 .slide-buttons button {
     padding: 10px 16px;
     border: 2px solid black;
-    background: #cc9d70;
+    background: white;
     color: black;
     font-size: 22px;
     font-weight: bold;
@@ -175,7 +175,7 @@ footer .footer-details{
 .subslide-buttons {
     padding: 4px 8px;
     border: none;
-    background: #cc9d70;
+    background: white;
     border: none;
     color: black;
     font-size: 15px;
@@ -194,7 +194,7 @@ footer .footer-details{
   header .nav-buttons button{
   margin-left:15px;
   padding:8px 8px;
-  background:#cc9d70;color:black;
+  background:#0045FF;color:white;
   font-weight: bold;
   border-radius:5px;cursor:pointer;transition:0.3s;
   border: 2px solid black;
@@ -208,7 +208,7 @@ header .nav-buttons button:hover{background:white;}
 .slide-buttons button {
     padding: 5px 10px;
     border: 2px solid black;
-    background: #cc9d70;
+    background: white;
     color: black;
     font-size: 17px;
     font-weight: bold;
@@ -314,11 +314,40 @@ header .nav-buttons button:hover{background:white;}
          1px  1px 0 white;  /* Bottom-right shadow */
 }
 
+@media(max-width:600px){
+.dawarat-title {
+  font-size: 16px;
+  margin-top: -15px;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  text-shadow: 
+        -1px -1px 0 white,  /* Top-left shadow */
+         1px -1px 0 white,  /* Top-right shadow */
+        -1px  1px 0 white,  /* Bottom-left shadow */
+         1px  1px 0 white;  /* Bottom-right shadow */
+}
+}
+
 .dawarat-text {
   font-size: 16x;
   color: white;
   font-weight: bold;
   margin-top: -15px;
+  text-shadow: 
+        -1px -1px 0 black,  /* Top-left shadow */
+         1px -1px 0 black,  /* Top-right shadow */
+        -1px  1px 0 black,  /* Bottom-left shadow */
+         1px  1px 0 black;  /* Bottom-right shadow */
+}
+
+@media(max-width:600px){
+.dawarat-text {
+  font-size: 13px;
+  color: white;
+  font-weight: bold;
+  margin-top: -15px;
+}
 }
 
 .web-description {
@@ -331,4 +360,8 @@ header .nav-buttons button:hover{background:white;}
     object-fit: contain;
     margin-top: -5px;
     margin-bottom: -5px;
+}
+
+.site-description {
+  color: #0045FF;
 }
