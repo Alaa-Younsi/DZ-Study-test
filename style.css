@@ -33,7 +33,7 @@ header .nav-buttons button:hover{background:white;}
 /* HERO */
 .hero{
   height:100vh;
-  background:url('arabe2.png') center/cover no-repeat;
+  background:url('arabe3.png') center/cover no-repeat;
   display:flex;justify-content:center;align-items:center;
   flex-direction:column;text-align:center;color:white;
   position:relative;
@@ -96,7 +96,6 @@ text-shadow:
     flex-direction: column;text-align:center;
     gap: 20px;
     margin-top: 20px;
-    justify-content:center;
 }
 
 .slide-buttons button {
@@ -147,33 +146,21 @@ footer .footer-details{
     display:none;
     position:fixed;
     z-index: 99;
-    top:75px;right:125px;
-    width:100px;height:150px;
+    top:75px;right:55px;
+    width:240px;height:450px;
     margin-top:15px;
     padding:15px;
     background:rgba(255,255,255,0.1);
     border-radius:8px;
     backdrop-filter: blur(6px);
+    justify-content:center;
+    align-items:center;
+    text-align:center;
 }
-
-@media(max-width:600px){
-  #subPanel {
-    display:none;
-    position:fixed;
-    z-index: 99;
-    top:120px;right:125px;
-    width:100px;height:160px;
-    margin-top:15px;
-    padding:15px;
-    background:rgba(255,255,255,0.1);
-    border-radius:8px;
-    backdrop-filter: blur(6px);
-}
-}
-
 
 .subslide-buttons {
     padding: 4px 8px;
+    width: 60%;
     border: none;
     background: white;
     border: none;
@@ -262,7 +249,7 @@ header .nav-buttons button:hover{background:white;}
   position:fixed;
   z-index: 99;
   top:75px;right:55px;
-  width:240px;height:400px;
+  width:240px;height:450px;
   margin-top:15px;
   text-align: center;
   padding: 10px;
@@ -364,4 +351,9 @@ header .nav-buttons button:hover{background:white;}
 
 .site-description {
   color: #0045FF;
+}
+
+.team {
+  color: #0045FF;
+  font-weight: bold;
 }
