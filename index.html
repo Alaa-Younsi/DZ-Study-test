@@ -82,7 +82,7 @@
                 <button id="subTriggerBtn" onclick="toggleSubPanel()">المصطلحات</button>
                 <button onclick="openContent('pdfContent')">المحاضرات</button>
                 <button onclick="openContent('videosContent')">الملتقيات و الندوات</button>
-                <button>بودكاست</button>
+                <button onclick="openContent('podcastContent')">بودكاست</button>
                 <button>المقالات و المجلات</button>
                 <button onclick="openContent('textContent')">البرامج التكوينية</button>
                 <button>المكتبة الرقمية</button>
@@ -124,6 +124,12 @@
                 allowfullscreen="true" 
                 allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
             ></iframe>
+        </div>
+
+        <!-- podcast CONTENT -->
+
+        <div id="podcastContent" class="content-panel">
+            <a href="podcast.mp4" width="100%" height="200" frameborder="0" allowfullscreen class="lecture">بودكاست الناقد</a>
         </div>
 
         <!-- TEXT CONTENT -->
