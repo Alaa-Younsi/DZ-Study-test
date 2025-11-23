@@ -113,7 +113,6 @@ text-shadow:
     background: #555;
 }
 
-
 /* SECTIONS */
 section{
   padding:60px 20px;text-align:center;
@@ -342,11 +341,21 @@ header .nav-buttons button:hover{background:white;}
 }
 
 .logo img {
+    height: 100px;
+    width: auto;
+    object-fit: contain;
+    margin-top: -5px;
+    margin-bottom: -5px;
+}
+
+@media(max-width:600px){
+.logo img {
     height: 80px;
     width: auto;
     object-fit: contain;
     margin-top: -5px;
     margin-bottom: -5px;
+}
 }
 
 .site-description {
