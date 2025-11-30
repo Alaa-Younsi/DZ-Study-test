@@ -85,17 +85,29 @@
                 <button onclick="openContent('podcastContent')">بودكاست</button>
                 <button>المقالات و المجلات</button>
                 <button onclick="openContent('textContent')">البرامج التكوينية</button>
-                <button>المكتبة الرقمية</button>
+                <button onclick="openContent('lilbrary')">المكتبة الرقمية</button>
                 <button>مذكرات التخرج ورسائل الدكتوراه</button>
                 <button onclick="openContent('facebookContent')">المستجدات و الاصدارات</button>
             </div>
         </div>
 
         <div id="subPanel">
-        <button class="subslide-buttons">قديمة</button><br><br>
-        <button class="subslide-buttons">حديثة</button><br><br>
-        <button class="subslide-buttons">معاصرة</button>
-    </div>
+            <button class="subslide-buttons" onclick="openContent('old-mosta')">قديمة</button><br><br>
+            <button class="subslide-buttons" onclick="openContent('new-mosta')">حديثة</button><br><br>
+            <button class="subslide-buttons" onclick="openContent('modern-mosta')">معاصرة</button>
+        </div>
+
+        <div id="old-mosta" class="content-panel">
+            <a href="الطبع والصنعة عند القدامى.pdf" target="_blank" class="lecture">📄الطبع و الصنعة عند القدامى</a>
+        </div>
+
+        <div id="new-mosta" class="content-panel">
+            <a href="الرومانسية.pdf" target="_blank" class="lecture">📄الرومنسية</a>
+        </div>
+            
+        <div id="modern-mosta" class="content-panel">
+            <a href="السيميائية.pdf" target="_blank" class="lecture">📄السيميائية</a>
+        </div>
 
             <!-- VIDEOS CONTENT -->
             
@@ -156,6 +168,12 @@
                 <p class="dawarat-text"><br>مصطلحات: إيديولوجيا، هيمنة، تمثيل، خطاب، تفكيك، سياقات السلطة</p>
             </div>
             <button class="subslide-buttons">التسجيل</button>
+        </div>
+
+        <!-- TEXT CONTENT -->
+         
+        <div id="lilbrary" class="content-panel">
+            <a href="إشكالية المصطلح .pdf" target="_blank" class="lecture">📄اشكالية المصطلح</a>
         </div>
 
         <!-- INFO SECTIONS -->
